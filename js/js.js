@@ -75,3 +75,29 @@ stack
 // let z = new Node(6, x);
 // y.next = z;
 
+
+
+
+class LinkedList{
+  constructor(){
+    this.head = null;
+    this.tail = null;
+    this.size = 0;
+    this.curr;
+  }
+  add(node) {
+  let newNode = new Node(node);
+  if (!this.head) { this.head = newNode.data };
+  if(this.size) {newNode.next= newNode.data}
+    this.size ++;
+  }
+  
+  // get(idx){
+  //   let i =0;
+  //   while(i < idx){
+  //     this.curr = this.head
+  //     i++
+  //   }
+  //   return this.curr
+  // }
+}
